@@ -535,15 +535,15 @@ function enviarFormulario(event) {
 
   document.getElementById("confirmationModal").style.display = "flex";
 
-  // emailjs.send(serviceID, templateID, {
-  //   title: "Confirmação de presença - " + templateParams.to_name,
-  //   name: templateParams.to_name,
-  //   message: templateParams.message,
-  // }, userID).then(() => {
-  //   document.getElementById("confirmationModal").style.display = "flex";
-  // }).catch((error) => {
-  //   console.error("Erro ao enviar o e-mail:", error);
-  // });
+  emailjs.send(serviceID, templateID, {
+    title: "Confirmação de presença - " + templateParams.to_name,
+    name: templateParams.to_name,
+    message: templateParams.message,
+  }, userID).then(() => {
+    document.getElementById("confirmationModal").style.display = "flex";
+  }).catch((error) => {
+    console.error("Erro ao enviar o e-mail:", error);
+  });
 }
 
 function closeConfirmationModal() {
