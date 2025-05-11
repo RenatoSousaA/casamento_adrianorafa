@@ -1,108 +1,216 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nosso Casamento</title>
-  <!-- Fonts & Icons -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
-  <link href="./style.css" rel="stylesheet" type="text/css">
-</head>
-<body>
-  <header>
-    <nav>
-      <a href="#inicio"><h2>Adriano e Rafaeli</h2></a>
-      <ul>
-        <li><a href="#inicio">Início</a></li>
-        <li><a href="#sobre">Sobre os Noivos</a></li>
-        <li><a href="#lugar">O Lugar</a></li>
-        <li><a href="#presentes">Presentes</a></li>
-        <li><a href="#confirmacao">Confirmação</a></li>
-      </ul>
-    </nav>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nosso Casamento</title>
+    <!-- Fonts & Icons -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="#inicio"><h2>Adriano e Rafaeli</h2></a>
+        <button class="menu-toggle" aria-label="Abrir menu">&#9776;</button>
+        <ul class="nav-links">
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#sobre">Sobre Nós</a></li>
+          <li><a href="#lugar">O Lugar</a></li>
+          <li><a href="#presentes">Presentes</a></li>
+          <li><a href="#confirmacao">Confirmação</a></li>
+        </ul>
+      </nav>
+    </header>
 
-  <!-- Início: Carrossel -->
-  <section id="inicio">
-    <div class="intro">
-      <div class="carousel">
-        <button class="carousel-btn prev">&#10094;</button>
-        <div class="carousel-images">
-          <img src="./Lugar e noivos/slide1.jpeg" alt="Cerimônia">
-          <img src="https://source.unsplash.com/1200x600/?wedding,couple" alt="Noivos">
-          <img src="https://source.unsplash.com/1200x600/?wedding,decor" alt="Decoração">
+    <!-- Início: Carrossel -->
+    <section id="inicio">
+      <div class="intro">
+        <div class="carousel">
+          <button class="carousel-btn prev" style="padding: 4px 12px 6px 11px">
+            &#10094;
+          </button>
+          <div class="carousel-images">
+            <img src="./Lugar e noivos/slide1.jpeg" alt="Cerimônia" />
+            <img
+              src="./Lugar e noivos/slide2.jpeg"
+              alt="Noivos"
+            />
+            <img
+              src="./Lugar e noivos/slide3.jpeg"
+              alt="Decoração"
+            />
+          </div>
+          <button class="carousel-btn next" style="padding: 4px 11px 6px 13px">
+            &#10095;
+          </button>
         </div>
-        <button class="carousel-btn next">&#10095;</button>
+        <div class="intro-text">
+          <h2>Bem-vindos ao nosso grande dia!</h2>
+          <p>
+            É uma alegria imensa compartilhar este momento tão especial com cada um de vocês. 
+            <br><br>
+            Explore as seções para descobrir nossa história, conhecer o local da cerimônia e confirmar sua presença nesse dia inesquecível.
+          </p>
+        </div>
       </div>
-      <div class="intro-text">
-        <h2>Bem-vindos ao nosso grande dia!</h2>
-        <p>Estamos muito felizes em compartilhar esse momento especial com vocês. Navegue pelas seções para conhecer nossa história, o local da cerimônia e confirmar sua presença.</p>
+    </section>
+
+    <!-- Sobre os Noivos -->
+    <section id="sobre">
+      <h2>Sobre os Noivos</h2>
+      <div class="couple">
+        <div>
+          <p>
+            Nossa história começou em um dia especial, cheio de luz e esperança. 
+            <br><br>
+            Desde então, compartilhamos sonhos, aventuras e momentos inesquecíveis.
+            <br><br>
+            Celebramos nosso amor e agradecemos a cada um de vocês por fazer parte dessa jornada.
+          </p>
+        </div>
+        <img src="./Lugar e noivos/noivosfoto.jpeg" alt="Noivos" />
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Sobre os Noivos -->
-  <section id="sobre">
-    <h2>Sobre os Noivos</h2>
-    <div class="couple">
-      <div>
-        <p>Nossa história começou em um dia ensolarado de primavera. Desde então, compartilhamos sonhos, aventuras e muito amor.</p>
+    <!-- O Lugar -->
+    <section id="lugar" class="place">
+      <h2>O Lugar</h2>
+      <div class="video-container">
+        <video controls>
+          <source src="./Lugar e noivos/video.MP4" type="video/mp4" />
+          Seu navegador não suporta vídeos.
+        </video>
       </div>
-      <img src="https://source.unsplash.com/800x600/?couple,portrait" alt="Noivos">
-    </div>
-  </section>
+      <p>
+        O nosso casamento acontecerá em um espaço acolhedor, rodeado pela
+        natureza e com uma vista de tirar o fôlego.
+      </p>
+      <div class="venue-images">
+        <img src="./Lugar e noivos/lugar1.jpeg" alt="Espaço 1" />
+        <img src="./Lugar e noivos/lugar2.jpeg" alt="Espaço 2" />
+        <img src="./Lugar e noivos/lugar3.jpeg" alt="Espaço 3" />
+        <img src="./Lugar e noivos/lugar4.jpeg" alt="Espaço 2" />
+        <img src="./Lugar e noivos/lugar5.jpeg" alt="Espaço 3" />
+      </div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3664.9445622645553!2d-46.6651947!3d-23.281464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cee9fe9108549f%3A0x2d4b714a3c3629bd!2sChacara%20Mirante%20do%20Valle!5e0!3m2!1spt-BR!2sbr!4v1745273904142!5m2!1spt-BR!2sbr"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </section>
 
-  <!-- O Lugar -->
-  <section id="lugar" class="place">
-    <h2>O Lugar</h2>
-    <div class="video-container">
-      <video controls>
-        <source src="./Lugar e noivos/video.MP4" type="video/mp4">
-        Seu navegador não suporta vídeos.
-      </video>
-    </div>
-    <p>O nosso casamento acontecerá em um espaço acolhedor, rodeado pela natureza e com uma vista de tirar o fôlego.</p>
-    <div class="venue-images">
-      <img src="./Lugar e noivos/lugar1.jpg" alt="Espaço 1">
-      <img src="./Lugar e noivos/lugar2.jpg" alt="Espaço 2">
-      <img src="./Lugar e noivos/lugar3.jpg" alt="Espaço 3">
-    </div>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3664.9445622645553!2d-46.6651947!3d-23.281464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cee9fe9108549f%3A0x2d4b714a3c3629bd!2sChacara%20Mirante%20do%20Valle!5e0!3m2!1spt-BR!2sbr!4v1745273904142!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-  </section>
+    <!-- Presentes -->
+    <section id="presentes">
+      <h2>Lista de Presentes</h2>
+      <div class="gift-list" id="gift-list"></div>
+      <div class="pagination">
+        <button id="prevPage">Anterior</button>
+        <span id="pageIndicator"></span>
+        <button id="nextPage">Próximo</button>
+      </div>
+    </section>
 
-  <!-- Presentes -->
-  <section id="presentes">
-    <h2>Lista de Presentes</h2>
-    <div class="gift-list" id="gift-list"></div>
-    <div class="pagination">
-      <button id="prevPage">Anterior</button>
-      <span id="pageIndicator"></span>
-      <button id="nextPage">Próximo</button>
-    </div>
-  </section>
-
-<!-- Modal para Presentes -->
-<div class="modal" id="giftModal">
-    <div class="modal-content">
+    <!-- Modal para Presentes -->
+    <div class="modal" id="giftModal">
+      <div class="modal-content">
         <button class="modal-close" onclick="closeGiftModal()">×</button>
-        <img id="giftImage" src="" alt="Presente" style="width: 100%; border-radius: 8px; margin-bottom: 1rem;">
+        <img
+          id="giftImage"
+          src=""
+          alt="Presente"
+          style="width: 50%; border-radius: 8px; margin-bottom: 1rem"
+        />
         <h3 id="giftName"></h3>
-        <p>Para contribuir com este presente, escaneie o QR Code abaixo:</p>
-        <img id="giftQRCode" src="./Presentes/qrcode-pix.png" alt="QR Code para Pix" style="width: 200px; height: 200px; margin: 1rem auto;">
+        <p id="giftValue"></p>
+        <p style="color: red; font-weight: bold; margin-top: 1rem">
+          Atenção: Antes de realizar o pagamento, confira o destinatário do PIX
+          para garantir que está correto.
+        </p>
+
+        <br />
+
+        <div
+          style="
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+          "
+        >
+          <img
+            id="giftQRCode"
+            src=""
+            alt="QR Code para Pix"
+            style="width: 100px; height: 100px"
+          />
+          <div>
+            <input
+              type="text"
+              id="giftPixKey"
+              value=""
+              readonly
+              style="display: none"
+            />
+            <button id="copyCodeButton" onclick="copyCodeToClipboard()">
+              <span style="margin-right: 8px">&#128203;</span> Copia e cola
+            </button>
+          </div>
+        </div>
+
+        <div style="margin-top: 1rem; text-align: center">
+          <a
+            href="#confirmacao"
+            style="
+              text-decoration: none;
+              color: #800020;
+              font-weight: bold;
+              text-decoration: underline;
+            "
+            onclick="closeGiftModal()"
+          >
+            Deixe uma mensagem para os noivos
+          </a>
+        </div>
+      </div>
     </div>
-</div>
 
-  <!-- Confirmação de Presença -->
-  <section id="confirmacao">
-    <h2>Confirmação de Presença</h2>
-    <form onsubmit="enviarFormulario(event)">
-      <input type="text" name="nome" placeholder="Seu nome" required>
-      <input type="email" name="email" placeholder="Seu e-mail" required>
-      <textarea name="mensagem" rows="4" placeholder="Deixe uma mensagem (opcional)"></textarea>
-      <button type="submit">Confirmar Presença</button>
-    </form>
-  </section>
+    <!-- Confirmação de Presença -->
+    <section id="confirmacao">
+      <h2>Confirmação de Presença</h2>
+      <form onsubmit="enviarFormulario(event)">
+        <input type="text" name="nome" placeholder="Seu nome" required />
+        <textarea
+          name="mensagem"
+          rows="4"
+          placeholder="Deixe uma mensagem"
+          required
+        ></textarea>
+        <button type="submit">Confirmar Presença</button>
+      </form>
+    </section>
 
-  <script src="./script.js"></script>
-</body>
+    <!-- Modal de Confirmação de Presença -->
+    <div class="modal" id="confirmationModal">
+      <div class="modal-content">
+        <button class="modal-close" onclick="closeConfirmationModal()">
+          ×
+        </button>
+        <p style="margin-top: 2">
+          Seu e-mail foi enviado com sucesso. Obrigado por confirmar sua
+          presença!
+        </p>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
 </html>
