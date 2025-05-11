@@ -521,12 +521,12 @@ function enviarFormulario(event) {
   const nome = event.target.nome.value;
   const mensagem = event.target.mensagem.value;
 
-  const encryptedServiceID = "c2VydmljZV8xbDZ5b3dk";
-  const encryptedTemplateID = "dGVtcGxhdGVfczIzMTFqYg==";
+  const encryptedServiceID = "c2VydmljZV9zcHJtOTRm";
+  const encryptedTemplateID = "dGVtcGxhdGVfOTd5d2VndA==";
 
   const serviceID = atob(encryptedServiceID);
   const templateID = atob(encryptedTemplateID);
-  const userID = "bRK01lmgN0f3gOtzq";
+  const userID = "u8QiY9kIkqlfNXWng";
 
   const templateParams = {
     to_name: nome,
