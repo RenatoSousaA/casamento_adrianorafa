@@ -68,7 +68,21 @@
           placeholder="Deixe uma mensagem"
           required
         ></textarea>
-        <button type="submit">Confirmar Presença</button>
+        <button type="submit" id="submitButton" disabled>Confirmar Presença</button>
+        <script>
+          const nomeInput = document.getElementById('nome');
+          const mensagemInput = document.getElementById('mensagem');
+          const submitButton = document.getElementById('submitButton');
+
+          function toggleSubmitButton() {
+            submitButton.disabled = !(
+              nomeInput.value.trim() && mensagemInput.value.trim()
+            );
+          }
+
+          nomeInput.addEventListener('input', toggleSubmitButton);
+          mensagemInput.addEventListener('input', toggleSubmitButton);
+        </script>
       </form>
     </section>
 
