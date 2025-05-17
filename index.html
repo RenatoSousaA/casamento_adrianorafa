@@ -18,10 +18,10 @@
         <button class="menu-toggle" aria-label="Abrir menu">&#9776;</button>
         <ul class="nav-links">
           <li><a href="#inicio">Início</a></li>
-          <li><a href="#sobre">Sobre Nós</a></li>
+          <li><a href="#confirmacao">Confirmação</a></li>
           <li><a href="#lugar">O Lugar</a></li>
           <li><a href="#presentes">Presentes</a></li>
-          <li><a href="#confirmacao">Confirmação</a></li>
+          
         </ul>
       </nav>
     </header>
@@ -39,16 +39,13 @@
               src="./Lugar e noivos/slide2.jpeg"
               alt="Noivos"
             />
-            <img
-              src="./Lugar e noivos/slide3.jpeg"
-              alt="Decoração"
-            />
           </div>
           <button class="carousel-btn next" style="padding: 4px 11px 6px 13px">
             &#10095;
           </button>
         </div>
         <div class="intro-text">
+          <h1 class="data-horario">09/08/2025 - 15:30</h1>
           <h2>Bem-vindos ao nosso grande dia!</h2>
           <p>
             É uma alegria imensa compartilhar este momento tão especial com cada um de vocês. 
@@ -59,8 +56,23 @@
       </div>
     </section>
 
+    <!-- Confirmação de Presença -->
+    <section id="confirmacao">
+      <h2>Confirmação de Presença</h2>
+      <form onsubmit="enviarFormulario(event)">
+        <input type="text" name="nome" placeholder="Seu nome" required />
+        <textarea
+          name="mensagem"
+          rows="4"
+          placeholder="Deixe uma mensagem"
+          required
+        ></textarea>
+        <button type="submit">Confirmar Presença</button>
+      </form>
+    </section>
+
     <!-- Sobre os Noivos -->
-    <section id="sobre">
+    <!-- <section id="sobre">
       <h2>Sobre os Noivos</h2>
       <div class="couple">
         <div>
@@ -74,7 +86,7 @@
         </div>
         <img src="./Lugar e noivos/noivosfoto.jpeg" alt="Noivos" />
       </div>
-    </section>
+    </section> -->
 
     <!-- O Lugar -->
     <section id="lugar" class="place">
@@ -149,7 +161,7 @@
             id="giftQRCode"
             src=""
             alt="QR Code para Pix"
-            style="width: 100px; height: 100px"
+            style="width: 150px; height: 150px"
           />
           <div>
             <input
@@ -181,21 +193,6 @@
         </div>
       </div>
     </div>
-
-    <!-- Confirmação de Presença -->
-    <section id="confirmacao">
-      <h2>Confirmação de Presença</h2>
-      <form onsubmit="enviarFormulario(event)">
-        <input type="text" name="nome" placeholder="Seu nome" required />
-        <textarea
-          name="mensagem"
-          rows="4"
-          placeholder="Deixe uma mensagem"
-          required
-        ></textarea>
-        <button type="submit">Confirmar Presença</button>
-      </form>
-    </section>
 
     <!-- Modal de Confirmação de Presença -->
     <div class="modal" id="confirmationModal">

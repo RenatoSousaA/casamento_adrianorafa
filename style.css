@@ -483,3 +483,8 @@ nav h2 {
         margin: 0.5rem 0;
     }
 }
+
+.data-horario {
+    font-size: 26pt;
+    color: var(--color-vinho);
+}
