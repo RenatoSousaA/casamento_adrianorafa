@@ -535,6 +535,9 @@ function enviarFormulario(event) {
 
   document.getElementById("confirmationModal").style.display = "flex";
 
+  event.target.nome.value = "";
+  event.target.mensagem.value = "";
+
   emailjs.send(serviceID, templateID, {
     title: "Confirmação de presença - " + templateParams.to_name,
     name: templateParams.to_name,

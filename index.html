@@ -60,8 +60,9 @@
     <section id="confirmacao">
       <h2>Confirmação de Presença</h2>
       <form onsubmit="enviarFormulario(event)">
-        <input type="text" name="nome" placeholder="Seu nome" required />
+        <input type="text" id="nome" name="nome" placeholder="Seu nome" required />
         <textarea
+          id="mensagem"
           name="mensagem"
           rows="4"
           placeholder="Deixe uma mensagem"
