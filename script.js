@@ -540,7 +540,6 @@ function enviarFormulario(event) {
     name: templateParams.to_name,
     message: templateParams.message,
   }, userID).then(() => {
-    document.getElementById("confirmationModal").style.display = "flex";
   }).catch((error) => {
     console.error("Erro ao enviar o e-mail:", error);
   });
